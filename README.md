@@ -5,4 +5,4 @@
 ### 프로젝트 진행 기간
 ### 2023/01 ~
 ---
-##### 기술 스택 : React.js Typescript Bootswatch
+##### 기술 스택 : React.js Typescript React-Bootstrap Styled-Components
