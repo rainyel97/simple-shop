@@ -6,3 +6,7 @@
 ### 2023/01 ~
 ---
 ##### 기술 스택 : React.js Typescript React-Bootstrap Styled-Components
+---
+Home page (미완성)
+
+![simple-shop-home](https://user-images.githubusercontent.com/85095908/212765537-9c8ee35e-4b34-42bc-a6fb-3369503c6a3d.png)
