@@ -23,7 +23,7 @@ export default function Detail(props: any) {
           </div>
           <div className="col-md-6">
             <h4 className="pt-5">{props.data[id].itemName}</h4>
-            <p>{props.data[id].disciription}</p>
+            <p>{props.data[id].discription}</p>
             <p>￦{props.data[id].price.toLocaleString()}</p>
             <Btn variant="outline-primary">Purchase</Btn>
             <Btn variant="outline-warning">Add Cart</Btn>
