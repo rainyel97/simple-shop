@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 interface interItems {
   itemId: number;
   itemName: string;
@@ -21,7 +21,7 @@ const ItemContainer = styled.div`
     justify-content: flex-start;
   }
 `;
-const Item = styled.div`
+const Item = styled(Link)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,25 +32,35 @@ const Item = styled.div`
   border: 1px solid #bdc3c7;
   border-radius: 8px;
   text-align: center;
+  color: black;
+  text-decoration: none;
   cursor: pointer;
+  transition: 0.25s ease-in;
+  :hover {
+    color: black;
+    box-shadow: 0px 0px 10px #444;
+  }
 `;
 const ItemImg = styled.img`
   width: 200px;
   height: 200px;
 `;
-const ItemName = styled.p`
+const ItemName = styled.h4`
   font-weight: bold;
-  margin-top: 5px;
-  padding: 5px;
+  font-size: small;
+`;
+const ItemPrice = styled.h6`
+  font-weight: bold;
 `;
 export default function Items(props: any) {
   return (
     <ItemContainer>
       {props.itemData.map((data: interItems, idx: number) => {
         return (
-          <Item>
+          <Item to="/Detail">
             <ItemImg src={data.itemImg} alt={data.itemName} />
             <ItemName>{data.itemName}</ItemName>
+            <ItemPrice>￦{data.price.toLocaleString()}</ItemPrice>
           </Item>
         );
       })}
