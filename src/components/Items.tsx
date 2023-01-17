@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-interface interItems {
+import { useNavigate } from "react-router-dom";
+
+interface interfaceItems {
   itemId: number;
   itemName: string;
   itemImg: string;
@@ -21,7 +22,7 @@ const ItemContainer = styled.div`
     justify-content: flex-start;
   }
 `;
-const Item = styled(Link)`
+const Item = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +38,7 @@ const Item = styled(Link)`
   cursor: pointer;
   transition: 0.25s ease-in;
   :hover {
+    scale: 1.05;
     color: black;
     box-shadow: 0px 0px 10px #444;
   }
@@ -53,11 +55,17 @@ const ItemPrice = styled.h6`
   font-weight: bold;
 `;
 export default function Items(props: any) {
+  const navigate = useNavigate();
   return (
     <ItemContainer>
-      {props.itemData.map((data: interItems, idx: number) => {
+      {props.itemData.map((data: interfaceItems, idx: number) => {
         return (
-          <Item to="/Detail">
+          <Item
+            key={idx}
+            onClick={() => {
+              navigate(`/Detail/${idx}`);
+            }}
+          >
             <ItemImg src={data.itemImg} alt={data.itemName} />
             <ItemName>{data.itemName}</ItemName>
             <ItemPrice>￦{data.price.toLocaleString()}</ItemPrice>
