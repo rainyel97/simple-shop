@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Button from "react-bootstrap/Button";
 import { useParams } from "react-router-dom";
-import { constants } from "buffer";
 
 const Btn = styled(Button)`
   margin-right: 10px;

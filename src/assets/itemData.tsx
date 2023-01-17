@@ -2,7 +2,16 @@
 판매 물건 리스트를 저장할 데이터
 사진은 애플 홈페이지에서 가져옴
 */
-const itemData = [
+
+interface interfaceItems {
+  itemId: number;
+  itemName: string;
+  itemImg: string;
+  price: number;
+  inCart: boolean;
+}
+
+const itemData: interfaceItems[] = [
   {
     itemId: 0,
     itemName: "Macbook Air",
