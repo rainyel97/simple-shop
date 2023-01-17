@@ -5,6 +5,7 @@ interface interfaceItems {
   itemId: number;
   itemName: string;
   itemImg: string;
+  discription: string;
   price: number;
   inCart: boolean;
 }

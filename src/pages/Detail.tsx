@@ -6,8 +6,9 @@ import { useParams } from "react-router-dom";
 const Btn = styled(Button)`
   margin-right: 10px;
 `;
+
 export default function Detail(props: any) {
-  const { id } = useParams() as { id: string };
+  const { id } = useParams() as { id: string }; //react-router v6부터 제네릭 지원x, 해당 방법 사용
   return (
     <>
       <Header />
@@ -22,12 +23,7 @@ export default function Detail(props: any) {
           </div>
           <div className="col-md-6">
             <h4 className="pt-5">{props.data[id].itemName}</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              quae iste ad. Explicabo ducimus, maxime debitis eius provident
-              optio facere vero, cupiditate earum exercitationem quasi magni
-              iusto excepturi dignissimos minima!
-            </p>
+            <p>{props.data[id].disciription}</p>
             <p>￦{props.data[id].price.toLocaleString()}</p>
             <Btn variant="outline-primary">Purchase</Btn>
             <Btn variant="outline-warning">Add Cart</Btn>
