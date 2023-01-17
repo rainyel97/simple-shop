@@ -3,6 +3,11 @@ import Header from "../components/Header";
 import Button from "react-bootstrap/Button";
 import { useParams } from "react-router-dom";
 
+const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 const Btn = styled(Button)`
   margin-right: 10px;
 `;
@@ -14,13 +19,13 @@ export default function Detail(props: any) {
       <Header />
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <ImgContainer className="col-md-6">
             <img
               src={props.data[id].itemImg}
               alt={props.data[id].itemName}
-              width="70%"
+              width="60%"
             />
-          </div>
+          </ImgContainer>
           <div className="col-md-6">
             <h4 className="pt-5">{props.data[id].itemName}</h4>
             <p>{props.data[id].discription}</p>
