@@ -24,7 +24,7 @@ export default function Detail(props: any) {
             <img
               src={props.data[id].itemImg}
               alt={props.data[id].itemName}
-              width="80%"
+              width="100%"
             />
           </ImgContainer>
           <div className="col-md-6">
