@@ -9,7 +9,7 @@ const HomeBg = styled.div`
   background-size: cover;
   background-position: center;
 `;
-const HomeTitle = styled.p`
+const HomeTitle = styled.div`
   margin-top: 15px;
   padding: 5px;
   text-align: center;

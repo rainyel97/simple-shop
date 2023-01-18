@@ -15,7 +15,7 @@ interface interfaceItems {
 const itemData: interfaceItems[] = [
   {
     itemId: 0,
-    itemName: "Macbook Air",
+    itemName: "Macbook Air M1",
     itemImg:
       "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1664472289661",
     discription:
@@ -25,6 +25,16 @@ const itemData: interfaceItems[] = [
   },
   {
     itemId: 1,
+    itemName: "Macbook Air M2",
+    itemImg:
+      "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1653084303665",
+    discription:
+      "Redesigned around the next-generation M2 chip, MacBook Air is strikingly thin and brings exceptional speed and power efficiency within its durable all‑aluminum enclosure. It’s the ultrafast, ultracapable laptop that lets you work, play, or create just about anything — anywhere.",
+    price: 1690000,
+    inCart: false,
+  },
+  {
+    itemId: 2,
     itemName: "Macbook Pro 13'",
     itemImg:
       "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp-digitalmat-gallery-1-202206?wid=364&hei=333&fmt=png-alpha&.v=1664613515821",
@@ -34,13 +44,23 @@ const itemData: interfaceItems[] = [
     inCart: false,
   },
   {
-    itemId: 2,
+    itemId: 3,
     itemName: "Macbook Pro 14'",
     itemImg:
-      "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp-14-digitalmat-gallery-1-202111?wid=364&hei=333&fmt=png-alpha&.v=1635183223000",
+      "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202301?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1671304673229",
     discription:
       "Supercharged by M2 Pro or M2 Max, MacBook Pro takes its power and efficiency further than ever. It delivers exceptional performance whether it’s plugged in or not, and now has even longer battery life. Combined with a stunning Liquid Retina XDR display and all the ports you need — this is a pro laptop without equal.",
     price: 2690000,
+    inCart: false,
+  },
+  {
+    itemId: 4,
+    itemName: "Macbook Pro 16'",
+    itemImg:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-silver-select-202301?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1671304673790",
+    discription:
+      "Supercharged by M2 Pro or M2 Max, MacBook Pro takes its power and efficiency further than ever. It delivers exceptional performance whether it’s plugged in or not, and now has even longer battery life. Combined with a stunning Liquid Retina XDR display and all the ports you need — this is a pro laptop without equal.",
+    price: 3490000,
     inCart: false,
   },
 ];

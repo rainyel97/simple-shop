@@ -11,15 +11,17 @@ interface interfaceItems {
 }
 
 const ItemContainer = styled.div`
-  width: 100%;
+  width: 1120px;
+  height: auto;
+  margin: auto;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
-  height: 300px;
   @media screen and (max-width: 768px) {
-    height: auto;
     flex-direction: column;
+    width: fit-content;
     justify-content: flex-start;
   }
 `;
@@ -30,7 +32,7 @@ const Item = styled.div`
   align-items: center;
   width: 300px;
   height: 270px;
-  margin: 40px;
+  margin: 15px 30px 20px 30px;
   border: 1px solid #bdc3c7;
   border-radius: 8px;
   text-align: center;
@@ -42,6 +44,9 @@ const Item = styled.div`
     scale: 1.05;
     color: black;
     box-shadow: 0px 0px 10px #444;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 40px;
   }
 `;
 const ItemImg = styled.img`
