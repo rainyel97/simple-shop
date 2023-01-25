@@ -35,7 +35,7 @@ const itemData: interfaceItems[] = [
   },
   {
     itemId: 2,
-    itemName: "Macbook Pro 13'",
+    itemName: 'Macbook Pro 13"',
     itemImg:
       "https://raw.githubusercontent.com/rainyel97/simple-shop/master/src/assets/itemImgs/mbpro13.png",
     discription:
@@ -45,7 +45,7 @@ const itemData: interfaceItems[] = [
   },
   {
     itemId: 3,
-    itemName: "Macbook Pro 14'",
+    itemName: 'Macbook Pro 14"',
     itemImg:
       "https://raw.githubusercontent.com/rainyel97/simple-shop/master/src/assets/itemImgs/mbpro14.jpg",
     discription:
@@ -55,7 +55,7 @@ const itemData: interfaceItems[] = [
   },
   {
     itemId: 4,
-    itemName: "Macbook Pro 16'",
+    itemName: 'Macbook Pro 16"',
     itemImg:
       "https://raw.githubusercontent.com/rainyel97/simple-shop/master/src/assets/itemImgs/mbpro16.jpg",
     discription:
