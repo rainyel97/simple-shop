@@ -5,7 +5,8 @@ import { useParams } from "react-router-dom";
 
 const ImgContainer = styled.div`
   display: flex;
-  width: fit-content;
+  padding: 30px;
+  min-width: 400px;
   justify-content: center;
 `;
 
@@ -19,12 +20,12 @@ export default function Detail(props: any) {
     <>
       <Header />
       <div className="container">
-        <div className="row">
-          <ImgContainer className="col-md-6">
+        <div className="row justify-content-center">
+          <ImgContainer className="col-md-4">
             <img
               src={props.data[id].itemImg}
               alt={props.data[id].itemName}
-              width="100%"
+              width="80%"
             />
           </ImgContainer>
           <div className="col-md-6">
