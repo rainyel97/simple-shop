@@ -17,7 +17,7 @@ const NavBrand = styled(Navbar.Brand)`
 export default function Header() {
   const navigate = useNavigate();
   return (
-    <Navr bg="dark" variant="dark">
+    <Navr collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <NavBrand
           onClick={() => {
@@ -26,22 +26,25 @@ export default function Header() {
         >
           Macbook Store
         </NavBrand>
-        <Nav className="me-auto">
-          <Nav.Link
-            onClick={() => {
-              navigate("/Cart");
-            }}
-          >
-            Cart
-          </Nav.Link>
-          <Nav.Link
-            onClick={() => {
-              navigate("/About");
-            }}
-          >
-            About
-          </Nav.Link>
-        </Nav>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link
+              onClick={() => {
+                navigate("/Cart");
+              }}
+            >
+              Cart
+            </Nav.Link>
+            <Nav.Link
+              onClick={() => {
+                navigate("/About");
+              }}
+            >
+              About
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navr>
   );
