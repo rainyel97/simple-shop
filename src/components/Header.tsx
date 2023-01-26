@@ -8,6 +8,9 @@ const Navr = styled(Navbar)`
   position: sticky;
   top: 0;
   z-index: 99;
+`;
+
+const NavBrand = styled(Navbar.Brand)`
   cursor: pointer;
 `;
 
@@ -16,13 +19,13 @@ export default function Header() {
   return (
     <Navr bg="dark" variant="dark">
       <Container>
-        <Navr.Brand
+        <NavBrand
           onClick={() => {
             navigate("/");
           }}
         >
           Macbook Store
-        </Navr.Brand>
+        </NavBrand>
         <Nav className="me-auto">
           <Nav.Link
             onClick={() => {
