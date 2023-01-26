@@ -17,8 +17,8 @@ const NavBrand = styled(Navbar.Brand)`
 export default function Header() {
   const navigate = useNavigate();
   return (
-    <Navr collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
+    <Navr collapseOnSelect expand="sm" bg="dark" variant="dark">
+      <Container className="m-0 justify-content-between">
         <NavBrand
           onClick={() => {
             navigate("/");
@@ -28,7 +28,7 @@ export default function Header() {
         </NavBrand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav>
             <Nav.Link
               onClick={() => {
                 navigate("/Cart");

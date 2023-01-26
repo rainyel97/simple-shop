@@ -28,7 +28,7 @@ export default function Detail(props: any) {
               width="80%"
             />
           </ImgContainer>
-          <div className="col-md-6">
+          <div className="col-md-8">
             <h4 className="pt-5">{props.data[id].itemName}</h4>
             <p>{props.data[id].discription}</p>
             <p>￦{props.data[id].price.toLocaleString()}</p>
