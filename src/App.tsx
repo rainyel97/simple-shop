@@ -1,8 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
-import data from "./assets/itemData";
-import { useState } from "react";
+//import data from "./assets/itemData";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import axios from "axios";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Detail from "./pages/Detail";
@@ -17,7 +18,16 @@ export type ItemType = {
 };
 
 function App() {
-  const [itemData, setItemData] = useState<ItemType[]>(data);
+  const [itemData, setItemData] = useState<ItemType[]>([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/goods")
+      .then((res) => {
+        console.log(res.data);
+        setItemData(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <Routes>
       <Route path="/" element={<Home data={itemData} />} />

@@ -39,6 +39,7 @@ const Item = styled.div`
   color: black;
   text-decoration: none;
   cursor: pointer;
+  box-shadow: 0.5px 0.5px 2px 1px #eee;
   transition: 0.25s ease-in;
   :hover {
     scale: 1.05;
