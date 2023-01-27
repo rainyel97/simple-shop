@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
-//import data from "./assets/itemData";
+import data from "./assets/itemData";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
@@ -27,6 +27,10 @@ function App() {
         setItemData(res.data);
       })
       .catch((err) => console.log(err));
+    if (itemData.length === 0) {
+      console.log("data load fail"); //서버가 닫혀있을 경우를 위해 기본 데이터 유지
+      setItemData(data);
+    }
   }, []);
   return (
     <Routes>
