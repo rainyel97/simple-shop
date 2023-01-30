@@ -1,14 +1,8 @@
 import styled from "styled-components";
 import Header from "../components/Header";
 import Items from "../components/Items";
-import BackImg from "../assets/background.jpg";
 import HomeCarousel from "../components/HomeCarousel";
-const HomeBg = styled.div`
-  height: 450px;
-  background-image: url(${BackImg});
-  background-size: cover;
-  background-position: center;
-`;
+
 const HomeTitle = styled.div`
   margin-top: 15px;
   padding: 5px;
