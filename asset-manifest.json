@@ -1,15 +1,18 @@
 {
   "files": {
     "main.css": "/simple-shop/static/css/main.b848a83c.css",
-    "main.js": "/simple-shop/static/js/main.461693c9.js",
+    "main.js": "/simple-shop/static/js/main.c0f18f3e.js",
     "static/media/SF-Pro-Display-Regular.otf": "/simple-shop/static/media/SF-Pro-Display-Regular.7fd613066beb52632931.otf",
     "static/media/background.jpg": "/simple-shop/static/media/background.395173b4401bf52c1339.jpg",
+    "static/media/carousel1.jpg": "/simple-shop/static/media/carousel1.d00be67d79ab2f738d9b.jpg",
+    "static/media/carousel3.jpg": "/simple-shop/static/media/carousel3.8a27ffb8876b0bcc04a0.jpg",
+    "static/media/carousel2.jpg": "/simple-shop/static/media/carousel2.f834301d11baaab85c60.jpg",
     "index.html": "/simple-shop/index.html",
     "main.b848a83c.css.map": "/simple-shop/static/css/main.b848a83c.css.map",
-    "main.461693c9.js.map": "/simple-shop/static/js/main.461693c9.js.map"
+    "main.c0f18f3e.js.map": "/simple-shop/static/js/main.c0f18f3e.js.map"
   },
   "entrypoints": [
     "static/css/main.b848a83c.css",
-    "static/js/main.461693c9.js"
+    "static/js/main.c0f18f3e.js"
   ]
 }
