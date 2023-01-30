@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Items from "../components/Items";
 import BackImg from "../assets/background.jpg";
-
+import HomeCarousel from "../components/HomeCarousel";
 const HomeBg = styled.div`
   height: 450px;
   background-image: url(${BackImg});
@@ -21,7 +21,7 @@ export default function Home(props: any) {
   return (
     <>
       <Header />
-      <HomeBg />
+      <HomeCarousel />
       <HomeTitle>Now Selling</HomeTitle>
       <Items itemData={props.data} />
     </>

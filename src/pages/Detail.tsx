@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import Header from "../components/Header";
+import DetailTab from "../components/DetailTab";
 import Button from "react-bootstrap/Button";
+import { Nav } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 
 const ImgContainer = styled.div`
   display: flex;
@@ -16,6 +19,7 @@ const Btn = styled(Button)`
 
 export default function Detail(props: any) {
   const { id } = useParams() as { id: string }; //react-router v6부터 제네릭 지원x, 해당 방법 사용
+  let [tab, setTab] = useState<number>(0);
   return (
     <>
       <Header />
@@ -36,6 +40,39 @@ export default function Detail(props: any) {
             <Btn variant="outline-warning">Add Cart</Btn>
           </div>
         </div>
+        <Nav justify variant="tabs" defaultActiveKey="link-0">
+          <Nav.Item>
+            <Nav.Link
+              onClick={() => {
+                setTab(0);
+              }}
+              eventKey="link-0"
+            >
+              Detail1
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              onClick={() => {
+                setTab(1);
+              }}
+              eventKey="link-1"
+            >
+              Detail2
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              onClick={() => {
+                setTab(2);
+              }}
+              eventKey="link-2"
+            >
+              Detail3
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>
+        <DetailTab tab={tab} />
       </div>
     </>
   );

@@ -19,6 +19,11 @@ export type ItemType = {
 
 function App() {
   const [itemData, setItemData] = useState<ItemType[]>([]);
+  /*
+  useEffect를 사용하여 상품 데이터 가져오기
+  json server를 사용하여 3001번 포트에 서버를 만들고 RestfulAPI처럼 사용가능
+  fetch 대신 자동으로 json형 변환을 해주는 axios 이용
+  */
   useEffect(() => {
     axios
       .get("http://localhost:3001/goods")
