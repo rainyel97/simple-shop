@@ -1,12 +1,38 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { CartType } from "../App";
+
+const initialState: CartType[] = [];
 
 const cart = createSlice({
   name: "cart",
-  initialState: [
-    { idx: 1, name: "Macbook Air M1", price: 1390000, quantity: 1 },
-    { idx: 2, name: 'Macbook Pro 14"', price: 2690000, quantity: 1 },
-  ],
-  reducers: {},
+  initialState,
+  reducers: {
+    addQuantity(state: CartType[], action: PayloadAction<number>) {
+      state.findIndex((data: CartType, idx: number) => {
+        if (data.id === action.payload) state[idx].quantity++;
+      });
+    },
+    decQuantity(state: CartType[], action: PayloadAction<number>) {
+      state.findIndex((data: CartType, idx: number) => {
+        if (data.id === action.payload && state[idx].quantity !== 1)
+          state[idx].quantity--;
+      });
+    },
+    addCart(state: CartType[], action: PayloadAction<CartType>) {
+      const inCart = state.findIndex((data: CartType) => {
+        if (data.id === action.payload.id) return true;
+        else return false;
+      });
+      console.log(inCart);
+      if (inCart === -1) {
+        state.push(action.payload);
+      } else {
+        for (let i = 0; i < state.length; i++) {
+          if (state[i].id === action.payload.id) state[i].quantity++;
+        }
+      }
+    },
+  },
 });
 
 export default configureStore({
@@ -14,3 +40,4 @@ export default configureStore({
     cart: cart.reducer,
   },
 });
+export const { addQuantity, decQuantity, addCart } = cart.actions;

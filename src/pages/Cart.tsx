@@ -1,35 +1,40 @@
 import Header from "../components/Header";
 import { Table } from "react-bootstrap";
 import { useSelector } from "react-redux";
-
-interface InterfaceCart {
-  idx: number;
-  name: string;
-  price: number;
-  quantity: number;
-}
-
+import { CartType } from "../App";
+import { RootState } from "..";
+import { useDispatch } from "react-redux";
+import { addQuantity, decQuantity } from "../app/store";
 export default function Cart() {
-  const state: any = useSelector((state) => state);
+  const state = useSelector((state: RootState) => state);
+  const dispatch = useDispatch();
+  console.log(state);
   return (
     <>
       <Header />
       <Table striped>
         <thead>
           <tr>
-            <th>Item Number</th>
+            <th>Item ID</th>
             <th>Item Name</th>
-            <th>Price</th>
             <th>Quantity</th>
+            <th>Change</th>
           </tr>
         </thead>
         <tbody>
-          {state.cart.map((data: InterfaceCart, i: number) => (
+          {state.cart.map((data: CartType, i: number) => (
             <tr key={i}>
-              <td>{state.cart[i].idx}</td>
+              <td>{state.cart[i].id}</td>
               <td>{state.cart[i].name}</td>
-              <td>{state.cart[i].price.toLocaleString()}</td>
               <td>{state.cart[i].quantity}</td>
+              <td>
+                <button onClick={() => dispatch(addQuantity(state.cart[i].id))}>
+                  +
+                </button>
+                <button onClick={() => dispatch(decQuantity(state.cart[i].id))}>
+                  -
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>

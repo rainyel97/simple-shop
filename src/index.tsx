@@ -15,3 +15,4 @@ root.render(
     </BrowserRouter>
   </Provider>
 );
+export type RootState = ReturnType<typeof store.getState>;

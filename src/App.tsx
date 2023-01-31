@@ -14,7 +14,12 @@ export type ItemType = {
   itemImg: string;
   discription: string;
   price: number;
-  inCart: boolean;
+};
+
+export type CartType = {
+  id: number;
+  name: string;
+  quantity: number;
 };
 
 function App() {
@@ -31,11 +36,10 @@ function App() {
         console.log(res.data);
         setItemData(res.data);
       })
-      .catch((err) => console.log(err));
-    if (itemData.length === 0) {
-      console.log("data load fail"); //서버가 닫혀있을 경우를 위해 기본 데이터 유지
-      setItemData(data);
-    }
+      .catch(() => {
+        console.log("data load fail");
+        setItemData(data); //서버가 닫혀있을 경우를 위해 기본 데이터 유지
+      });
   }, []);
   return (
     <Routes>
