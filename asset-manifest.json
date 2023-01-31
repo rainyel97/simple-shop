@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/simple-shop/static/css/main.b848a83c.css",
-    "main.js": "/simple-shop/static/js/main.e413ab9e.js",
+    "main.js": "/simple-shop/static/js/main.9700a0f9.js",
     "static/media/SF-Pro-Display-Regular.otf": "/simple-shop/static/media/SF-Pro-Display-Regular.7fd613066beb52632931.otf",
-    "static/media/carousel1.jpg": "/simple-shop/static/media/carousel1.d00be67d79ab2f738d9b.jpg",
-    "static/media/carousel3.jpg": "/simple-shop/static/media/carousel3.8a27ffb8876b0bcc04a0.jpg",
-    "static/media/carousel2.jpg": "/simple-shop/static/media/carousel2.f834301d11baaab85c60.jpg",
+    "static/media/carousel1.jpg": "/simple-shop/static/media/carousel1.aa2edb226178b3a76088.jpg",
+    "static/media/carousel2.jpg": "/simple-shop/static/media/carousel2.9371fa5df25b16b62bd3.jpg",
+    "static/media/carousel3.jpg": "/simple-shop/static/media/carousel3.805ea115ca641787301d.jpg",
     "index.html": "/simple-shop/index.html",
     "main.b848a83c.css.map": "/simple-shop/static/css/main.b848a83c.css.map",
-    "main.e413ab9e.js.map": "/simple-shop/static/js/main.e413ab9e.js.map"
+    "main.9700a0f9.js.map": "/simple-shop/static/js/main.9700a0f9.js.map"
   },
   "entrypoints": [
     "static/css/main.b848a83c.css",
-    "static/js/main.e413ab9e.js"
+    "static/js/main.9700a0f9.js"
   ]
 }
