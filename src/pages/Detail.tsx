@@ -93,7 +93,7 @@ export default function Detail(props: any) {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-        <DetailTab tab={tab} />
+        <DetailTab tab={tab} id={id} />
       </div>
     </>
   );

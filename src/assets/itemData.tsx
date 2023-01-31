@@ -49,7 +49,7 @@ const itemData: interfaceItems[] = [
     itemImg:
       "https://raw.githubusercontent.com/rainyel97/simple-shop/master/src/assets/itemImgs/mbpro14.jpg",
     discription:
-      "Supercharged by M2 Pro or M2 Max, MacBook Pro takes its power and efficiency further than ever. It delivers exceptional performance whether it’s plugged in or not, and now has even longer battery life. Combined with a stunning Liquid Retina XDR display and all the ports you need — this is a pro laptop without equal.",
+      "Supercharged by M1 Pro or M1 Max, MacBook Pro takes its power and efficiency further than ever. It delivers exceptional performance whether it’s plugged in or not, and now has even longer battery life. Combined with a stunning Liquid Retina XDR display and all the ports you need — this is a pro laptop without equal.",
     price: 2690000,
     inCart: false,
   },
@@ -59,7 +59,7 @@ const itemData: interfaceItems[] = [
     itemImg:
       "https://raw.githubusercontent.com/rainyel97/simple-shop/master/src/assets/itemImgs/mbpro16.jpg",
     discription:
-      "Supercharged by M2 Pro or M2 Max, MacBook Pro takes its power and efficiency further than ever. It delivers exceptional performance whether it’s plugged in or not, and now has even longer battery life. Combined with a stunning Liquid Retina XDR display and all the ports you need — this is a pro laptop without equal.",
+      "Supercharged by M1 Pro or M1 Max, MacBook Pro takes its power and efficiency further than ever. It delivers exceptional performance whether it’s plugged in or not, and now has even longer battery life. Combined with a stunning Liquid Retina XDR display and all the ports you need — this is a pro laptop without equal.",
     price: 3490000,
     inCart: false,
   },
