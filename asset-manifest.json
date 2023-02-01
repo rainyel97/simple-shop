@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/simple-shop/static/css/main.b848a83c.css",
-    "main.js": "/simple-shop/static/js/main.bef4b326.js",
+    "main.js": "/simple-shop/static/js/main.fd853264.js",
     "static/media/SF-Pro-Display-Regular.otf": "/simple-shop/static/media/SF-Pro-Display-Regular.7fd613066beb52632931.otf",
     "static/media/itemId0Detail.jpg": "/simple-shop/static/media/itemId0Detail.5de3eabf816c26067587.jpg",
     "static/media/itemId3_4Detail.jpg": "/simple-shop/static/media/itemId3_4Detail.fc41965324a3adc3f3af.jpg",
     "static/media/itemId2Detail.jpg": "/simple-shop/static/media/itemId2Detail.fcedac425662bdc64d83.jpg",
     "static/media/itemId1Detail.jpg": "/simple-shop/static/media/itemId1Detail.353d943e1fa5f2158044.jpg",
-    "static/media/carousel1.jpg": "/simple-shop/static/media/carousel1.aa2edb226178b3a76088.jpg",
     "static/media/carousel2.jpg": "/simple-shop/static/media/carousel2.9371fa5df25b16b62bd3.jpg",
-    "static/media/carousel3.jpg": "/simple-shop/static/media/carousel3.805ea115ca641787301d.jpg",
+    "static/media/carousel1.jpg": "/simple-shop/static/media/carousel1.805ea115ca641787301d.jpg",
     "index.html": "/simple-shop/index.html",
     "main.b848a83c.css.map": "/simple-shop/static/css/main.b848a83c.css.map",
-    "main.bef4b326.js.map": "/simple-shop/static/js/main.bef4b326.js.map"
+    "main.fd853264.js.map": "/simple-shop/static/js/main.fd853264.js.map"
   },
   "entrypoints": [
     "static/css/main.b848a83c.css",
-    "static/js/main.bef4b326.js"
+    "static/js/main.fd853264.js"
   ]
 }
