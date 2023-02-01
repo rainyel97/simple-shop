@@ -36,13 +36,6 @@ export default function Header() {
             >
               Cart
             </Nav.Link>
-            <Nav.Link
-              onClick={() => {
-                navigate("/About");
-              }}
-            >
-              About
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

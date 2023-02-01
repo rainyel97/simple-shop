@@ -4,7 +4,6 @@ import data from "./assets/itemData";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
-import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Detail from "./pages/Detail";
 
@@ -45,7 +44,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Home data={itemData} />} />
       <Route path="/Detail/:id" element={<Detail data={itemData} />} />
-      <Route path="/About" element={<About />} />
       <Route path="/Cart" element={<Cart />} />
       <Route path="/*" element={<div>잘못된 접근입니다.</div>} />
     </Routes>
