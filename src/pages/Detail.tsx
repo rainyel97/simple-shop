@@ -18,6 +18,12 @@ const Btn = styled(Button)`
   margin-right: 10px;
 `;
 
+const ArrowUpBtn = styled(Button)`
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+`;
+
 export default function Detail(props: any) {
   const { id } = useParams() as { id: string }; //react-router v6부터 제네릭 지원x, 해당 방법 사용
   let [tab, setTab] = useState<number>(0);
@@ -47,13 +53,14 @@ export default function Detail(props: any) {
             <Btn
               variant="outline-warning"
               onClick={() => {
-                dispatch(
-                  addCart({
-                    id: props.data[id].itemId,
-                    name: props.data[id].itemName,
-                    quantity: 1,
-                  })
-                );
+                if (window.confirm("Are you sure you want to add Cart?"))
+                  dispatch(
+                    addCart({
+                      id: props.data[id].itemId,
+                      name: props.data[id].itemName,
+                      quantity: 1,
+                    })
+                  );
                 alert("Success!");
               }}
             >
@@ -94,6 +101,12 @@ export default function Detail(props: any) {
           </Nav.Item>
         </Nav>
         <DetailTab tab={tab} id={id} />
+        <ArrowUpBtn
+          variant="dark"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          Go Top
+        </ArrowUpBtn>
       </div>
     </>
   );

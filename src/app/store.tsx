@@ -23,7 +23,6 @@ const cart = createSlice({
         if (data.id === action.payload.id) return true;
         else return false;
       });
-      console.log(inCart);
       if (inCart === -1) {
         state.push(action.payload);
       } else {
@@ -31,6 +30,10 @@ const cart = createSlice({
           if (state[i].id === action.payload.id) state[i].quantity++;
         }
       }
+    },
+    removeCart(state: CartType[], action: PayloadAction<number>) {
+      const removed = state.filter((data) => data.id !== action.payload);
+      return removed;
     },
   },
 });
@@ -40,4 +43,4 @@ export default configureStore({
     cart: cart.reducer,
   },
 });
-export const { addQuantity, decQuantity, addCart } = cart.actions;
+export const { addQuantity, decQuantity, addCart, removeCart } = cart.actions;

@@ -1,10 +1,10 @@
 import Header from "../components/Header";
-import { Table } from "react-bootstrap";
+import { Table, Button } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { CartType } from "../App";
 import { RootState } from "..";
 import { useDispatch } from "react-redux";
-import { addQuantity, decQuantity } from "../app/store";
+import { addQuantity, decQuantity, removeCart } from "../app/store";
 export default function Cart() {
   const state = useSelector((state: RootState) => state);
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ export default function Cart() {
             <th>Item ID</th>
             <th>Item Name</th>
             <th>Quantity</th>
-            <th>Change</th>
+            <th>Remove</th>
           </tr>
         </thead>
         <tbody>
@@ -26,14 +26,35 @@ export default function Cart() {
             <tr key={i}>
               <td>{state.cart[i].id}</td>
               <td>{state.cart[i].name}</td>
-              <td>{state.cart[i].quantity}</td>
               <td>
-                <button onClick={() => dispatch(addQuantity(state.cart[i].id))}>
+                {state.cart[i].quantity}
+
+                <Button
+                  size="sm"
+                  variant="light"
+                  onClick={() => dispatch(addQuantity(state.cart[i].id))}
+                >
                   +
-                </button>
-                <button onClick={() => dispatch(decQuantity(state.cart[i].id))}>
+                </Button>
+                <Button
+                  size="sm"
+                  variant="light"
+                  onClick={() => dispatch(decQuantity(state.cart[i].id))}
+                >
                   -
-                </button>
+                </Button>
+              </td>
+              <td>
+                <Button
+                  size="sm"
+                  variant="danger"
+                  onClick={() => {
+                    if (window.confirm("Are you sure you want to delete it?"))
+                      dispatch(removeCart(state.cart[i].id));
+                  }}
+                >
+                  Remove
+                </Button>
               </td>
             </tr>
           ))}
