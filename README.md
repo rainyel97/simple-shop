@@ -5,7 +5,7 @@
 ### 프로젝트 진행 기간
 ### 2023/01 ~ 2023/02
 ---
-##### 기술 스택 : React.js Typescript React-Bootstrap Styled-Components
+##### 기술 스택 : React.js Typescript React-Bootstrap Styled-Components Redux-Toolkit
 ---
 
 https://rainyel97.github.io/simple-shop/
