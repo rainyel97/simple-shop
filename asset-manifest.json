@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/simple-shop/static/css/main.b848a83c.css",
-    "main.js": "/simple-shop/static/js/main.0f3cda33.js",
+    "main.js": "/simple-shop/static/js/main.b9f5964a.js",
     "static/media/itemId3_4Detail.jpg": "/simple-shop/static/media/itemId3_4Detail.b034391e234bceb4c61d.jpg",
     "static/media/SF-Pro-Display-Regular.otf": "/simple-shop/static/media/SF-Pro-Display-Regular.7fd613066beb52632931.otf",
     "static/media/itemId0Detail.jpeg": "/simple-shop/static/media/itemId0Detail.5981cf2d98226f5cc3a6.jpeg",
@@ -9,6 +9,7 @@
     "static/media/itemId1Detail.jpeg": "/simple-shop/static/media/itemId1Detail.240a855d71d3ed0915ad.jpeg",
     "static/media/itemId4Spec.jpeg": "/simple-shop/static/media/itemId4Spec.9f6ccc3066de234461bc.jpeg",
     "static/media/itemId3Spec.jpeg": "/simple-shop/static/media/itemId3Spec.752f40b894e7bb691dee.jpeg",
+    "static/media/cartBackground.jpg": "/simple-shop/static/media/cartBackground.9447bda62783f97315b1.jpg",
     "static/media/itemId2Spec.jpeg": "/simple-shop/static/media/itemId2Spec.7fbe27253e29c5166003.jpeg",
     "static/media/itemId1Spec.jpeg": "/simple-shop/static/media/itemId1Spec.f67fabd43f7d64d822b6.jpeg",
     "static/media/itemId0Spec.jpeg": "/simple-shop/static/media/itemId0Spec.8834bf093dd8bdca7adf.jpeg",
@@ -16,10 +17,10 @@
     "static/media/carousel1.jpg": "/simple-shop/static/media/carousel1.805ea115ca641787301d.jpg",
     "index.html": "/simple-shop/index.html",
     "main.b848a83c.css.map": "/simple-shop/static/css/main.b848a83c.css.map",
-    "main.0f3cda33.js.map": "/simple-shop/static/js/main.0f3cda33.js.map"
+    "main.b9f5964a.js.map": "/simple-shop/static/js/main.b9f5964a.js.map"
   },
   "entrypoints": [
     "static/css/main.b848a83c.css",
-    "static/js/main.0f3cda33.js"
+    "static/js/main.b9f5964a.js"
   ]
 }
