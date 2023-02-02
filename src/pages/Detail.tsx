@@ -76,7 +76,7 @@ export default function Detail(props: any) {
               }}
               eventKey="link-0"
             >
-              Detail1
+              Overview
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
@@ -86,17 +86,7 @@ export default function Detail(props: any) {
               }}
               eventKey="link-1"
             >
-              Detail2
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link
-              onClick={() => {
-                setTab(2);
-              }}
-              eventKey="link-2"
-            >
-              Detail3
+              Techspec
             </Nav.Link>
           </Nav.Item>
         </Nav>
