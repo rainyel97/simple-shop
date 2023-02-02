@@ -1,20 +1,25 @@
 {
   "files": {
     "main.css": "/simple-shop/static/css/main.b848a83c.css",
-    "main.js": "/simple-shop/static/js/main.fd853264.js",
+    "main.js": "/simple-shop/static/js/main.091c4fa0.js",
+    "static/media/itemId3_4Detail.jpg": "/simple-shop/static/media/itemId3_4Detail.b034391e234bceb4c61d.jpg",
     "static/media/SF-Pro-Display-Regular.otf": "/simple-shop/static/media/SF-Pro-Display-Regular.7fd613066beb52632931.otf",
-    "static/media/itemId0Detail.jpg": "/simple-shop/static/media/itemId0Detail.5de3eabf816c26067587.jpg",
-    "static/media/itemId3_4Detail.jpg": "/simple-shop/static/media/itemId3_4Detail.fc41965324a3adc3f3af.jpg",
-    "static/media/itemId2Detail.jpg": "/simple-shop/static/media/itemId2Detail.fcedac425662bdc64d83.jpg",
-    "static/media/itemId1Detail.jpg": "/simple-shop/static/media/itemId1Detail.353d943e1fa5f2158044.jpg",
+    "static/media/itemId0Detail.jpeg": "/simple-shop/static/media/itemId0Detail.5981cf2d98226f5cc3a6.jpeg",
+    "static/media/itemId2Detail.jpeg": "/simple-shop/static/media/itemId2Detail.baf9713bc92c1e7d75d6.jpeg",
+    "static/media/itemId1Detail.jpeg": "/simple-shop/static/media/itemId1Detail.240a855d71d3ed0915ad.jpeg",
+    "static/media/itemId4Spec.jpeg": "/simple-shop/static/media/itemId4Spec.9f6ccc3066de234461bc.jpeg",
+    "static/media/itemId3Spec.jpeg": "/simple-shop/static/media/itemId3Spec.752f40b894e7bb691dee.jpeg",
+    "static/media/itemId2Spec.jpeg": "/simple-shop/static/media/itemId2Spec.7fbe27253e29c5166003.jpeg",
+    "static/media/itemId1Spec.jpeg": "/simple-shop/static/media/itemId1Spec.f67fabd43f7d64d822b6.jpeg",
+    "static/media/itemId0Spec.jpeg": "/simple-shop/static/media/itemId0Spec.8834bf093dd8bdca7adf.jpeg",
     "static/media/carousel2.jpg": "/simple-shop/static/media/carousel2.9371fa5df25b16b62bd3.jpg",
     "static/media/carousel1.jpg": "/simple-shop/static/media/carousel1.805ea115ca641787301d.jpg",
     "index.html": "/simple-shop/index.html",
     "main.b848a83c.css.map": "/simple-shop/static/css/main.b848a83c.css.map",
-    "main.fd853264.js.map": "/simple-shop/static/js/main.fd853264.js.map"
+    "main.091c4fa0.js.map": "/simple-shop/static/js/main.091c4fa0.js.map"
   },
   "entrypoints": [
     "static/css/main.b848a83c.css",
-    "static/js/main.fd853264.js"
+    "static/js/main.091c4fa0.js"
   ]
 }
