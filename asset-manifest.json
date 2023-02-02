@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/simple-shop/static/css/main.b848a83c.css",
-    "main.js": "/simple-shop/static/js/main.b9f5964a.js",
+    "main.js": "/simple-shop/static/js/main.e2fb30e9.js",
     "static/media/itemId3_4Detail.jpg": "/simple-shop/static/media/itemId3_4Detail.b034391e234bceb4c61d.jpg",
     "static/media/SF-Pro-Display-Regular.otf": "/simple-shop/static/media/SF-Pro-Display-Regular.7fd613066beb52632931.otf",
     "static/media/itemId0Detail.jpeg": "/simple-shop/static/media/itemId0Detail.5981cf2d98226f5cc3a6.jpeg",
@@ -17,10 +17,10 @@
     "static/media/carousel1.jpg": "/simple-shop/static/media/carousel1.805ea115ca641787301d.jpg",
     "index.html": "/simple-shop/index.html",
     "main.b848a83c.css.map": "/simple-shop/static/css/main.b848a83c.css.map",
-    "main.b9f5964a.js.map": "/simple-shop/static/js/main.b9f5964a.js.map"
+    "main.e2fb30e9.js.map": "/simple-shop/static/js/main.e2fb30e9.js.map"
   },
   "entrypoints": [
     "static/css/main.b848a83c.css",
-    "static/js/main.b9f5964a.js"
+    "static/js/main.e2fb30e9.js"
   ]
 }
