@@ -25,13 +25,14 @@ const CartFooter = styled.div`
   flex-direction: row;
   position: sticky;
   bottom: 0;
-  z-index: 100;
+  z-index: 99;
   width: 100%;
   height: 80px;
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
   background: white;
+  border-bottom: 1px solid #444;
   border-top: 1px solid #444;
 `;
 
