@@ -59,6 +59,7 @@ export default function Detail(props: any) {
                       id: props.data[id].itemId,
                       name: props.data[id].itemName,
                       quantity: 1,
+                      price: props.data[id].price,
                     })
                   );
                   alert("Success!");

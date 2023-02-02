@@ -19,6 +19,7 @@ export type CartType = {
   id: number;
   name: string;
   quantity: number;
+  price: number;
 };
 
 function App() {
@@ -29,16 +30,18 @@ function App() {
   fetch 대신 자동으로 json형 변환을 해주는 axios 이용
   */
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/goods")
-      .then((res) => {
-        console.log(res.data);
-        setItemData(res.data);
-      })
-      .catch(() => {
-        console.log("data load fail");
-        setItemData(data); //서버가 닫혀있을 경우를 위해 기본 데이터 유지
-      });
+    //서버를 상시로 켜놓지 않았을 시 에러 요청을 받아오는 문제로 인한 로딩 속도 저하 문제 발생.
+    //해당 코드 주석화
+    // axios
+    //   .get("http://localhost:3001/goods")
+    //   .then((res) => {
+    //     console.log(res.data);
+    //     setItemData(res.data);
+    //   })
+    //   .catch(() => {
+    //     console.log("data load fail");
+    setItemData(data); //서버가 닫혀있을 경우를 위해 기본 데이터 유지
+    //   });
   }, []);
   return (
     <Routes>
