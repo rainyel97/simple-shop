@@ -53,7 +53,7 @@ export default function Detail(props: any) {
             <Btn
               variant="outline-warning"
               onClick={() => {
-                if (window.confirm("Are you sure you want to add Cart?"))
+                if (window.confirm("Are you sure you want to add Cart?")) {
                   dispatch(
                     addCart({
                       id: props.data[id].itemId,
@@ -61,7 +61,8 @@ export default function Detail(props: any) {
                       quantity: 1,
                     })
                   );
-                alert("Success!");
+                  alert("Success!");
+                }
               }}
             >
               Add Cart
